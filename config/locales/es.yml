@@ -1,0 +1,18 @@
+es:
+  simple_form:
+    "yes": 'Sí'
+    "no": 'No'
+    required:
+      text: 'obligatorio'
+      mark: '*'
+    error_notification:
+      default_message: "Hay los siguientes errores en el forma"
+    labels:
+      user:
+        email: 'Email'
+        password: 'Password'
+    placeholders:
+      user:
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Confirmar Password'

@@ -24,3 +24,8 @@ en:
     #     username: 'User name to sign in.'
     #     password: 'No special characters, please.'
 
+    placeholders:
+      user:
+        email: 'Email'
+        password: 'Password'
+        password_confirmation: 'Confirmar Password'
