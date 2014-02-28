@@ -1,0 +1,6 @@
+<ul>
+  <li class='task <%= "completed" if task.completed_at? %>'>
+    <%= task.text %>
+    <%= (link_to "Complete", task_completions_path(task.id), :method => :post) unless task.completed_at? %>
+  </li>
+</ul>
