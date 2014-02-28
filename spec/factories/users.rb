@@ -3,7 +3,10 @@
 FactoryGirl.define do
   factory :user do
     email "john@example.com"
+    first_name "john"
+    last_name "doe"
     password "secret"
+    password_confirmation "secret"
     name "John Doe"
 
     trait :no_agent do

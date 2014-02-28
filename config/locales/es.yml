@@ -1,4 +1,18 @@
 es:
+  title:
+    default: "Sistema de prueba"
+    tasks:
+      index: "Tareas"
+    users:
+      show: "Usuario"
+  activerecord:
+    models:
+      task: "Tarea"
+  helpers:
+    submit:
+      defaults:
+        create: "Crear %{model}"
+        update: "Guardar Cambios"
   simple_form:
     "yes": 'Sí'
     "no": 'No'
@@ -8,11 +22,11 @@ es:
     error_notification:
       default_message: "Hay los siguientes errores en el forma"
     labels:
-      user:
+      defaults:
         email: 'Email'
         password: 'Password'
     placeholders:
-      user:
+      defaults:
         email: 'Email'
         password: 'Password'
         password_confirmation: 'Confirmar Password'

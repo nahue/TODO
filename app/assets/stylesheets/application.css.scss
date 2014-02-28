@@ -9,5 +9,12 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require framework_and_overrides
+ *= require font-awesome
+ *= require webarch
+ *= require responsive
+ *= require custom-icon-set
+ *= require magic_space
+ *= require tiles_responsive
  *= require_tree .
  */

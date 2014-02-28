@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140227185502) do
+ActiveRecord::Schema.define(version: 20140228221423) do
+
+  create_table "tasks", force: true do |t|
+    t.string   "text"
+    t.integer  "user_id"
+    t.datetime "completed_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "todos", force: true do |t|
+    t.string   "text"
+    t.boolean  "completed"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email"
@@ -22,6 +38,8 @@ ActiveRecord::Schema.define(version: 20140227185502) do
     t.string   "activation_code"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
 end

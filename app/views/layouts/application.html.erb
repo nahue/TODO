@@ -2,19 +2,38 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Todo" %></title>
+    <title><%= page_title %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Todo" %>">
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
-    </main>
+
+    <%= render 'layouts/navigation' %>
+
+
+    <!-- BEGIN CONTENT -->
+    <div class="page-container row-fluid">
+      <%= render 'layouts/sidebar' %>
+
+      <!-- BEGIN PAGE CONTAINER-->
+      <div class="page-content">
+        <div class="content">
+          <%= render 'layouts/messages' %>
+          <!-- BEGIN PAGE TITLE -->
+          <div class="page-title">
+            <h3><%= section_title %></h3>
+          </div>
+          <!-- END PAGE TITLE -->
+          <!-- BEGIN PlACE PAGE CONTENT HERE -->
+          <%= yield %>
+          <!-- END PLACE PAGE CONTENT HERE -->
+        </div>
+      </div>
+      <!-- END PAGE CONTAINER -->
+
+    </div>
+    <!-- END CONTENT -->
   </body>
 </html>

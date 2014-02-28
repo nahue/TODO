@@ -1,14 +1,10 @@
-<h2>Entrar</h2>
 
-<%= form_tag sessions_path do %>
+<%= simple_form_for :session, :url => "/sessions", :defaults => {:label => false} do |f| %>
 
-<%= label_tag :email %>
-<%= text_field_tag :email %>
+<%= f.input :email %>
 
-<%= label_tag :password %>
-<%= password_field_tag :password %>
+<%= f.input :password %>
 
-
-<%= submit_tag %>
+<%= f.button :submit %>
 
 <% end %>
