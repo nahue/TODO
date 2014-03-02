@@ -29,20 +29,20 @@ feature "User Management", %q{
     login @user
 
     click_link "Salir"
-    expect(page).to have_content "No autorizado"
+    expect(page).to have_content "Ingresar al sistema"
   end
 
 
   def create_user
     visit root_path
-    click_link 'Sign Up'
+    click_link 'Crear una cuenta'
     fill_in 'user[email]', with: "pepe@pepe.com"
     fill_in 'user[firstname]', with: "pepe"
     fill_in 'user[lastname]', with: "carioca"
     fill_in 'user[password]', with: "secret"
     fill_in 'user[password_confirmation]', with: "secret"
 
-    click_button 'Crear User'
+    click_button 'Enviar'
   end
 
 
