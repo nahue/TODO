@@ -1,4 +1,6 @@
 es:
+  messages:
+    login: "Entrar"
   title:
     default: "Sistema de prueba"
     tasks:
@@ -10,6 +12,8 @@ es:
       task: "Tarea"
   helpers:
     submit:
+      user:
+        create: "Entrar"
       defaults:
         create: "Crear %{model}"
         update: "Guardar Cambios"
@@ -28,5 +32,23 @@ es:
     placeholders:
       defaults:
         email: 'Email'
+        firstname: 'Nombre'
+        lastname: 'Apellido'
         password: 'Password'
         password_confirmation: 'Confirmar Password'
+    magic_submit:
+      #users:
+      #  new:
+      #    submit: "Nuevo Usuario"
+      default:
+        new:
+          submit: "Enviar"
+          retry: "Intentar nuevamente"
+          disable_with: "Enviando&#133;"
+        edit:
+          submit: "Guardar Cambios"
+          retry: "Intentar nuevamente"
+          disable_with: "Guardando&#133;"
+      cancel:
+        format: "%{submit_button} o %{cancel_link}"
+        cancel: "Cancelar"

@@ -5,11 +5,12 @@
     <!-- BEGIN MINI-PROFILE -->
     <div class="user-info-wrapper">
       <div class="profile-wrapper">
-        <img src="/assets/profiles/avatar.jpg" alt="" data-src="/assets/profiles/avatar.jpg" data-src-retina="/assets/profiles/avatar2x.jpg" width="69" height="69" />
+        <!--<img src="/assets/profiles/avatar.jpg" alt="" data-src="/assets/profiles/avatar.jpg" data-src-retina="/assets/profiles/avatar2x.jpg" width="69" height="69" />-->
+        <img src="<%= avatar_url(current_user) %>" alt="" data-src="/assets/profiles/avatar.jpg" data-src-retina="/assets/profiles/avatar2x.jpg" width="69" height="69" />
       </div>
       <div class="user-info">
         <div class="greeting">Welcome</div>
-        <div class="username">John <span class="semi-bold">Smith</span></div>
+        <div class="username"><%= current_user.firstname %> <span class="semi-bold"><%= current_user.lastname %></span></div>
         <div class="status">Status<a href="#"><div class="status-icon green"></div>Online</a></div>
       </div>
     </div>

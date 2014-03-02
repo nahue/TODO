@@ -12,4 +12,4 @@ YAML.load(ENV['ROLES']).each do |role|
   Role.find_or_create_by_name(role)
   puts 'role: ' << role
 end
-user.add_role :admin
+#user.add_role :admin

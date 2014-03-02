@@ -14,13 +14,17 @@ gem 'figaro'
 gem 'puma'
 gem 'rolify'
 gem 'simple_form'
+gem 'simple_form-magic_submit'
 gem 'bcrypt-ruby'
 gem 'angularjs-rails'
 gem "font-awesome-rails"
+gem 'pace-rails'
 group :development do
+  gem 'rails_semantic_logger'
   gem 'meta_request'
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  #gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem "binding_of_caller"
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-rspec'

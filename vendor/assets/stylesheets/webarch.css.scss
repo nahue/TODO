@@ -1651,7 +1651,7 @@ span.iconset {
           display: block;
           width: 8px;
           height: 25px;
-          background-image: url("../img/sidebar-menu-arrow.png");
+          background-image: url("/assets/sidebar-menu-arrow.png");
           float: right;
           position: absolute;
           right: -8px;
@@ -1832,7 +1832,7 @@ span.iconset {
 /*** Scroll to top *****/
 
 .scrollup {
-  background: url('../img/pullup.png') no-repeat;
+  background: url('/assets/pullup.png') no-repeat;
   background-position: 0px 0px;
   width: 27px;
   height: 27px;
@@ -4109,7 +4109,7 @@ form legend, .form-view legend {
 }
 
 .status-icon {
-  background: url('../img/icon/status.png') no-repeat;
+  background: url('/assets/icon/status.png') no-repeat;
   position: relative;
   display: inline-block;
   margin-right: 10px;
@@ -5936,7 +5936,7 @@ code {
     top: 8px;
   }
   .close {
-    background: url("../img/icon/noti-cross.png") no-repeat scroll 0 0 transparent;
+    background: url("/assets/icon/noti-cross.png") no-repeat scroll 0 0 transparent;
     background-position: -9px -10px;
     width: 10px;
     height: 9px;

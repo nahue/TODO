@@ -41,8 +41,8 @@ ActiveRecord::Schema.define(version: 20140228221423) do
     t.string   "activation_code"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "firstname"
+    t.string   "lastname"
   end
 
   create_table "users_roles", id: false, force: true do |t|

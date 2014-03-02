@@ -37,8 +37,8 @@ feature "User Management", %q{
     visit root_path
     click_link 'Sign Up'
     fill_in 'user[email]', with: "pepe@pepe.com"
-    fill_in 'user[first_name]', with: "pepe"
-    fill_in 'user[last_name]', with: "carioca"
+    fill_in 'user[firstname]', with: "pepe"
+    fill_in 'user[lastname]', with: "carioca"
     fill_in 'user[password]', with: "secret"
     fill_in 'user[password_confirmation]', with: "secret"
 

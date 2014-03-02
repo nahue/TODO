@@ -10,11 +10,8 @@
  *
  *= require_self
  *= require framework_and_overrides
+ *= require template
  *= require font-awesome
- *= require webarch
- *= require responsive
- *= require custom-icon-set
- *= require magic_space
- *= require tiles_responsive
+ *= require pace/pace-theme-flash
  *= require_tree .
  */

@@ -15,6 +15,6 @@ private
   helper_method :current_user
 
   def authorize
-    redirect_to login_url, alert: "No autorizado" if current_user.nil?
+    redirect_to login_url if current_user.nil?
   end
 end

@@ -1,13 +1,13 @@
-<h2>Registrarse</h2>
+<%= simple_form_for @user, :defaults => {:label => false}, :html => { :class => "animated fadeIn", :id => "frm_register"} do |f| %>
 
-<%= simple_form_for @user, :defaults => {:label => false} do |f| %>
-
-
-<%= f.input :email %>
-<%= f.input :first_name %>
-<%= f.input :last_name %>
-<%= f.input :password %>
-<%= f.input :password_confirmation %>
-<%= f.button :submit %>
+  <%= f.input :email %>
+  <%= f.input :firstname, :wrapper => :webarch_half %>
+  <%= f.input :lastname, :wrapper => :webarch_half %>
+  <%= f.input :password, :wrapper => :webarch_half %>
+  <%= f.input :password_confirmation, :wrapper => :webarch_half %>
+  <div class="col-md-12 col-sm-12">
+    <%= f.button :magic_submit %>
+  </div>
 
 <% end %>
+
