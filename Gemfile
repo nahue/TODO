@@ -19,6 +19,7 @@ gem 'bcrypt-ruby'
 gem 'angularjs-rails'
 gem "font-awesome-rails"
 gem 'pace-rails'
+gem "animate-rails"
 group :development do
   gem 'rails_semantic_logger'
   gem 'meta_request'
