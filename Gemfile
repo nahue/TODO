@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.1'
 gem 'rails', '4.0.3'
-gem 'pg'
+
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -21,6 +21,7 @@ gem "font-awesome-rails"
 gem 'pace-rails'
 gem "animate-rails"
 group :development do
+  gem 'sqlite3'
   gem 'rails_semantic_logger'
   gem 'meta_request'
   gem 'better_errors'
@@ -47,4 +48,8 @@ group :test do
   gem 'email_spec'
 end
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
