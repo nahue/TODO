@@ -15,7 +15,7 @@ gem 'puma'
 gem 'rolify'
 gem 'simple_form'
 gem 'simple_form-magic_submit'
-gem 'bcrypt-ruby'
+gem 'bcrypt'
 gem 'angularjs-rails'
 gem "font-awesome-rails"
 gem 'pace-rails'
