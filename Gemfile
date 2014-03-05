@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'cancan'
 gem 'figaro'
 gem 'puma'
+gem 'foreman'
 gem 'rolify'
 gem 'simple_form'
 gem 'simple_form-magic_submit'
@@ -20,8 +21,11 @@ gem 'angularjs-rails'
 gem "font-awesome-rails"
 gem 'pace-rails'
 gem "animate-rails"
+gem 'execjs'
+gem 'therubyracer'
+
 group :development do
-  gem 'sqlite3'
+  gem 'pg'
   gem 'rails_semantic_logger'
   gem 'meta_request'
   gem 'better_errors'
