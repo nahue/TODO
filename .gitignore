@@ -86,3 +86,7 @@ pickle-email-*.html
 
 # Ignore application configuration
 /config/application.yml
+chef/cookbooks
+chef/tmp
+chef/Cheffile.lock
+.vagrant

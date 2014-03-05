@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+config.assets.initialize_on_precompile = false
+
 module TODO
   class Application < Rails::Application
 
@@ -32,6 +34,6 @@ module TODO
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :es
 
-    config.assets.initialize_on_precompile = false
+
   end
 end

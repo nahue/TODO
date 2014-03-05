@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.0.0'
 gem 'rails', '4.0.3'
 
 gem 'sass-rails', '~> 4.0.0'
@@ -15,7 +15,7 @@ gem 'puma'
 gem 'rolify'
 gem 'simple_form'
 gem 'simple_form-magic_submit'
-gem 'bcrypt'
+gem 'bcrypt-ruby'
 gem 'angularjs-rails'
 gem "font-awesome-rails"
 gem 'pace-rails'
