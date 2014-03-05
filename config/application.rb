@@ -9,7 +9,7 @@ Bundler.require(:default, Rails.env)
 
 
 module TODO
-  config.assets.initialize_on_precompile = false
+
   class Application < Rails::Application
 
     # don't generate RSpec tests for views and helpers
