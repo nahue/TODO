@@ -21,11 +21,11 @@ gem 'angularjs-rails'
 gem "font-awesome-rails"
 gem 'pace-rails'
 gem "animate-rails"
-gem 'execjs'
-gem 'therubyracer'
+gem 'sqlite3'
+gem 'capistrano', '~> 3.1'
+gem 'capistrano-bundler', '~> 1.1.2'
 
 group :development do
-  gem 'pg'
   gem 'rails_semantic_logger'
   gem 'meta_request'
   gem 'better_errors'
@@ -53,7 +53,8 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
+  gem 'execjs'
+  gem 'therubyracer'
 end
 

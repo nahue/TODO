@@ -1,0 +1,13 @@
+---
+app_name: TODO
+# created with:
+# python -c 'import crypt; print crypt.crypt("Strato1986", "SomeSaltedValue")'
+password: SoTsz71.HaNr.
+mysql_root_password: SoTsz71.HaNr.
+home_dir: "/home/deploy"
+repo: git@github.com:nahue/TODO.git
+
+project_ruby: 2.0.0-p353
+ruby_url: "ftp://ftp.ruby-lang.org//pub/ruby/2.0/ruby-{{ project_ruby }}.tar.gz"
+
+ruby_dir: "/home/vagrant/"
