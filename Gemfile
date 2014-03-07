@@ -22,6 +22,7 @@ gem "font-awesome-rails"
 gem 'pace-rails'
 gem "animate-rails"
 gem 'sqlite3'
+gem 'unicorn'
 
 group :development do
   gem 'capistrano', '~> 3.1.0'
