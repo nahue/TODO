@@ -23,5 +23,4 @@ production:
   encoding: unicode
   database: todo_dev
   user: postgres
-  password: vagrant
   host: localhost

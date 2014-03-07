@@ -1,18 +1,15 @@
 set :stage, :staging
-set :branch, "master"
+# set :branch, "master"
 
 # used in case we're deploying multiple versions of the same
 # app side by side. Also provides quick sanity checks when looking
 # at filepaths
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 
-server 'vagrant@localhost:2222', roles: %w{web app db}, primary: true
+server "#{fetch(:deploy_user)}@localhost", roles: %w{web app db}, primary: true, port: 2222
 
 set :deploy_to, "/home/#{fetch(:deploy_user)}/deploy/#{fetch(:full_app_name)}"
-set :ssh_options, {
- keys: %w(~/.vagrant.d/insecure_private_key),
- forward_agent: true
-}
+
 # dont try and infer something as important as environment from
 # stage name.
 set :rails_env, :production

@@ -23,10 +23,11 @@ gem 'pace-rails'
 gem "animate-rails"
 gem 'sqlite3'
 
-
 group :development do
-  gem 'capistrano-rails', '~> 1.0.0'
-  gem 'capistrano-bundler'
+  gem 'capistrano', '~> 3.1.0'
+  gem 'capistrano-bundler', '~> 1.1.2'
+  gem 'capistrano-rails', '~> 1.1.1'
+  gem 'capistrano-rvm'
   gem 'rails_semantic_logger'
   gem 'meta_request'
   gem 'better_errors'
@@ -57,6 +58,6 @@ group :production do
   gem 'rails_12factor'
   gem 'execjs'
   gem 'therubyracer'
-  gem 'pg'
+  gem 'mysql2'
 end
 

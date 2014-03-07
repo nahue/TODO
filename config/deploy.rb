@@ -2,19 +2,19 @@
 lock '3.1.0'
 
 set :application, 'TODO'
-set :repo_url, 'git@bitbucket.org:strato1986/todo.git'
+set :repo_url, 'git@github.com:nahue/TODO.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
-
+set :forward_agent, true
 set :deploy_to, "/home/deploy/rails/TODO"
 # set :scm, :git
-set :rbenv_ruby, File.read('.ruby-version').strip
+set :rbenv_ruby_version, '2.0.0-p451'
 set :format, :pretty
 set :log_level, :debug
 set :pty, true
 
-set :user, 'deploy'
-
+set :deploy_user, 'vagrant'
+set :use_sudo, false
 set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
