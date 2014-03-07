@@ -2,7 +2,7 @@
 lock '3.1.0'
 
 set :application, 'TODO'
-set :repo_url, 'git@github.com:nahue/TODO.git'
+set :repo_url, 'git@bitbucket.org:strato1986/todo.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 

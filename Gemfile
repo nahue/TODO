@@ -22,10 +22,11 @@ gem "font-awesome-rails"
 gem 'pace-rails'
 gem "animate-rails"
 gem 'sqlite3'
-gem 'capistrano', '~> 3.1'
-gem 'capistrano-bundler', '~> 1.1.2'
+
 
 group :development do
+  gem 'capistrano-rails', '~> 1.0.0'
+  gem 'capistrano-bundler'
   gem 'rails_semantic_logger'
   gem 'meta_request'
   gem 'better_errors'
@@ -56,5 +57,6 @@ group :production do
   gem 'rails_12factor'
   gem 'execjs'
   gem 'therubyracer'
+  gem 'pg'
 end
 
