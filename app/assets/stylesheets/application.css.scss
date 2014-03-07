@@ -9,7 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require framework_and_overrides
+ *= require bootstrap
  *= require template
  *= require font-awesome
  *= require pace/pace-theme-flash
