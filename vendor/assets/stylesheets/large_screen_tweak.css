@@ -1,6 +1,6 @@
 /** Spacing system **/
 /* Landscape phones and down */
-  @media (max-width: 480px) { 
+  @media (max-width: 480px) {
 	/** Padding top **/
 	.xs-p-t-5{
 		padding-top:5px;
@@ -150,7 +150,6 @@
   }
 
   /* Large desktop */
-  @media (min-width: 1200px) { ... }
 @media (min-width: 1600px) {
 .container {
     width: 1170px;
