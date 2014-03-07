@@ -7,12 +7,10 @@ set -e
 TIMEOUT=${TIMEOUT-60}
 APP_ROOT=/home/vagrant/deploy/TODO_staging/current
 PID=$APP_ROOT/tmp/pids/unicorn.pid
-CMD="$APP_ROOT/bin/unicorn -D -c $APP_ROOT/config/unicorn.rb"
+CMD="$APP_ROOT/bin/unicorn -D -E production -c $APP_ROOT/config/unicorn.rb"
 
 action="$1"
 set -u
-
-test -f "$INIT_CONF" && . $INIT_CONF
 
 old_pid="$PID.oldbin"
 
