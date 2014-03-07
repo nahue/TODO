@@ -1,5 +1,4 @@
-/*** Very Large Screens **/
-@media only screen and (min-width : 1600) {
+@media only screen and (min-width: 1600px) {
   .visible-xlg{
     display: block !important;
   }
@@ -7,7 +6,7 @@
     display: none !important;
   }
 }
-@media only screen and (min-width : 1824px) {
+@media only screen and (min-width: 1824px) {
   body {
     height:100%;
   }
@@ -857,7 +856,7 @@
   #Parks.list .meta{
     width: 150px;
   }
-
+}
 
 @media (max-width: 840px){
   #Parks.list .meta.region,
