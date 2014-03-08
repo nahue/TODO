@@ -15,7 +15,7 @@ gem 'puma'
 gem 'foreman'
 gem 'rolify'
 gem 'simple_form'
-gem 'simple_form-magic_submit'
+gem 'simple_form-magic_submit', :git => 'https://github.com/nahue/simple_form-magic_submit'
 gem 'bcrypt-ruby'
 gem 'angularjs-rails'
 gem "font-awesome-rails"

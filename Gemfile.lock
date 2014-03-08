@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/nahue/simple_form-magic_submit
+  revision: 80bcfd9f82af9ea6be9c9ecdc4ff5697a4e327b9
+  specs:
+    simple_form-magic_submit (1.1.0)
+      i18n (~> 0.6)
+      simple_form (>= 3.0.0.beta1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -229,9 +237,6 @@ GEM
     simple_form (3.0.1)
       actionpack (>= 4.0.0, < 4.1)
       activemodel (>= 4.0.0, < 4.1)
-    simple_form-magic_submit (1.1.0)
-      i18n (~> 0.6)
-      simple_form (>= 3.0.0.beta1)
     slop (3.4.7)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -323,7 +328,7 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.0)
   simple_form
-  simple_form-magic_submit
+  simple_form-magic_submit!
   sqlite3
   therubyracer
   turbolinks
