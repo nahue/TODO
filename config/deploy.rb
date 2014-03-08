@@ -25,14 +25,16 @@ namespace :deploy do
   desc 'Stop application'
   task :stop do
     on roles(:app), in: :sequence, wait: 5 do
-      execute "cd #{current_path} && bundle exec passenger stop -p 8080" rescue nil
+      #execute "cd #{current_path} && bundle exec passenger stop -p 8080" rescue nil
+      execute "sudo service unicorn stop"
     end
   end
 
   desc 'Start application'
   task :start do
     on roles(:app), in: :sequence, wait: 5 do
-      execute "cd #{current_path} && bundle exec passenger start -d -p 8080 -e production --user=deploy"
+      #execute "cd #{current_path} && bundle exec passenger start -d -p 8080 -e production --user=deploy"
+      execute "sudo service unicorn start"
     end
   end
 
