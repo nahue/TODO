@@ -1651,7 +1651,7 @@ span.iconset {
           display: block;
           width: 8px;
           height: 25px;
-          background-image: url("/assets/sidebar-menu-arrow.png");
+          background-image: url(image-path("sidebar-menu-arrow.png"));
           float: right;
           position: absolute;
           right: -8px;
@@ -1832,7 +1832,7 @@ span.iconset {
 /*** Scroll to top *****/
 
 .scrollup {
-  background: url('/assets/pullup.png') no-repeat;
+  background: url(image-path('pullup.png')) no-repeat;
   background-position: 0px 0px;
   width: 27px;
   height: 27px;
@@ -3746,7 +3746,7 @@ form legend, .form-view legend {
         position: relative;
         a {
           position: relative;
-          background: url('../img/icon/portlet-tray.png') no-repeat;
+          background: url(image-path('icon/portlet-tray.png')) no-repeat;
           transition: all 0.1s linear 0s;
         }
       }
@@ -3754,7 +3754,7 @@ form legend, .form-view legend {
   }
   &.solid .grid-title .tools a {
     position: relative;
-    background: url('../img/icon/portlet-tray.png') no-repeat;
+    background: url(image-path('icon/portlet-tray.png')) no-repeat;
     transition: all 0.1s linear 0s;
   }
   &.simple .grid-title .tools > a.remove, &.solid .grid-title .tools > a.remove {
@@ -3893,7 +3893,7 @@ form legend, .form-view legend {
       .tools {
         margin-top: 3px;
         a {
-          background: url(../img/icon/portlet-tray.png) no-repeat;
+          background: url(image-path('icon/portlet-tray.png')) no-repeat;
           width: 23px;
           height: 23px;
         }
