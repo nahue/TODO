@@ -16,7 +16,7 @@
       <!-- END MOBILE HEADER -->
       <!-- BEGIN LOGO -->
       <a href="<%= url_for root_path %>">
-        <img src="/assets/logo.png" class="logo" alt="" data-src="/assets/logo.png" data-src-retina="/assets/logo2x.png" width="106" height="21"/>
+        <img src="<%= image_url("logo.png")%>" class="logo" alt="" data-src="<%= image_url("logo.png")%>" data-src-retina="<%= image_url("logo2x.png")%>" width="106" height="21"/>
       </a>
       <!-- END LOGO -->
       <!-- BEGIN LOGO NAV BUTTONS -->
@@ -91,7 +91,7 @@
               <!-- BEGIN NOTIFICATION MESSAGE -->
               <div class="notification-messages info">
                 <div class="user-profile">
-                  <img src="/assets/profiles/d.jpg" alt="" data-src="/assets/profiles/d.jpg" data-src-retina="/assets/profiles/d2x.jpg" width="35" height="35">
+                  <img src="<%= image_url("profiles/d.jpg")%>" alt="" data-src="<%= image_url("profiles/d.jpg")%>" data-src-retina="<%= image_url("profiles/d2x.jpg")%>" width="35" height="35">
                 </div>
                 <div class="message-wrapper">
                   <div class="heading">Title of Notification</div>
@@ -106,7 +106,7 @@
           <!-- END NOTIFICATION CENTER -->
           <!-- BEGIN PROFILE PICTURE -->
           <div class="profile-pic">
-            <img src="/assets/profiles/avatar_small.jpg" alt="" data-src="/assets/profiles/avatar_small.jpg" data-src-retina="/assets/profiles/avatar_small2x.jpg" width="35" height="35" />
+            <img src="<%= image_url("profiles/avatar_small.jpg")%>" alt="" data-src="<%= image_url("profiles/avatar_small.jpg")%>" data-src-retina="<%= image_url("profiles/avatar_small2x.jpg")%>" width="35" height="35" />
           </div>
           <!-- END PROFILE PICTURE -->
         </div>
