@@ -3,6 +3,8 @@ lock '3.1.0'
 
 set :application, 'TODO'
 set :repo_url, 'git@github.com:nahue/TODO.git'
+set :deploy_via, :remote_cache
+set :copy_exclude, [ '.git' ]
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 set :forward_agent, true

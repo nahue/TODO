@@ -12,8 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+
 //= require bootstrap
 //= require angular
+//= require pace/pace
+//= require jquery.ui.draggable
+//= require plugins/breakpoints
+//= require plugins/jquery.animateNumbers
+//= require plugins/jquery.sidr.min
+//= require plugins/jquery.slimscroll.min
+//= require core
+//= require demo
 
 

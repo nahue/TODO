@@ -10,7 +10,23 @@ class ApplicationController < ActionController::Base
 
 private
   def current_user
+
+    #if session[:user_id]
+    #  if user = User.find(session[:user_id])
+    #    @current_user ||= user
+    #  else
+    #    redirect_to root_path
+    #  end
+    #else
+
+    #end
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
+
+    rescue ActiveRecord::RecordNotFound
+      session[:user_id] = nil
+      flash[:notice] = "Su sesió+n expiró"
+      redirect_to root_path
+
   end
   helper_method :current_user
 
