@@ -11,7 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228221423) do
+ActiveRecord::Schema.define(version: 20140312033321) do
+
+  create_table "api_keys", force: true do |t|
+    t.string   "access_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.datetime "expires_at"
+  end
+
+  add_index "api_keys", ["access_token"], name: "index_api_keys_on_access_token", unique: true
+
+  create_table "assignments", force: true do |t|
+    t.string   "description"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.integer  "resource_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "assignments", ["resource_id"], name: "index_assignments_on_resource_id"
+
+  create_table "resources", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "roles", force: true do |t|
     t.string   "name"

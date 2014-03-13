@@ -31,7 +31,7 @@ feature 'User manages tasks' do
   end
 
   def create_task(task_name)
-    click_link "Tasks"
+    click_link "Tareas"
     click_link "New Task"
     fill_in "Text", with: task_name
     click_button "Crear Tarea"

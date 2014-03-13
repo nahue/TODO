@@ -9,8 +9,15 @@ TODO::Application.routes.draw do
 
   resources :users, :only => [:new, :create]
   resources :sessions, :only => [:new, :create]
-  resources :tasks, :only => [:index, :new, :create] do
+  resources :tasks, :only => [:index, :new, :create, :show] do
     resources :completions, :only => [:create]
+  end
+  resources :assignments, :only => [:index, :new, :create]
+
+  namespace :api do
+    namespace :v1 do
+      resources :tasks
+    end
   end
 
   get '*a', :to => 'errors#routing'

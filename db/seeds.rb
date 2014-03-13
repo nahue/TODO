@@ -12,4 +12,9 @@ YAML.load(ENV['ROLES']).each do |role|
   Role.find_or_create_by_name(role)
   puts 'role: ' << role
 end
+
+task = Task.create!({text: "Tarea 1", user_id: 1, completed_at: false})
+task = Task.create!({text: "Tarea 2", user_id: 1, completed_at: true})
+task = Task.create!({text: "Tarea 3", user_id: 1, completed_at: false})
+task = Task.create!({text: "Tarea 4", user_id: 1, completed_at: true})
 #user.add_role :admin

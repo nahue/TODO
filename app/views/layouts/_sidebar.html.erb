@@ -20,28 +20,30 @@
     <ul>
       <!-- BEGIN SELECTED LINK -->
       <li class="start active">
-        <a href="#">
+        <a href="<%= url_for root_path %>">
           <i class="icon-custom-home"></i>
-          <span class="title">Link 1</span>
+          <span class="title">Inicio</span>
           <span class="selected"></span>
-          <span class="badge badge-important pull-right">5</span>
+          <!--<span class="badge badge-important pull-right">5</span>-->
         </a>
       </li>
       <!-- END SELECTED LINK -->
       <!-- BEGIN BADGE LINK -->
       <li class="">
-        <a href="#">
+        <a href="<%= url_for tasks_path %>">
           <i class="fa fa-envelope"></i>
-          <span class="title">Link 2</span>
-          <span class="badge badge-disable pull-right">203</span>
+          <span class="title">Tareas</span>
+          <% if count_tasks > 0 %>
+            <span class="badge badge-disable pull-right"><%= count_tasks %></span>
+          <% end %>
         </a>
       </li>
       <!-- END BADGE LINK -->
       <!-- BEGIN SINGLE LINK -->
       <li class="">
-        <a href="#">
+        <a href="<%= url_for assignments_path %>">
           <i class="fa fa-flag"></i>
-          <span class="title">Link 3</span>
+          <span class="title">Turnos</span>
         </a>
       </li>
       <!-- END SINGLE LINK -->

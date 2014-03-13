@@ -7,6 +7,8 @@ es:
       index: "Tareas"
     users:
       show: "Usuario"
+    assignments:
+      index: "Turnos"
   activerecord:
     models:
       task: "Tarea"

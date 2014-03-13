@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'bootstrap-sass', '>= 3.0.0.0'
+gem 'bootstrap-sass', '~> 3.1.1'
 gem 'cancan'
 gem 'figaro'
 gem 'puma'
@@ -24,7 +24,9 @@ gem 'pace-rails'
 gem "animate-rails"
 gem 'sqlite3'
 gem 'unicorn'
-
+gem 'protected_attributes'
+gem 'kendoui-rails'
+gem 'rabl'
 group :development do
   gem 'capistrano', '~> 3.1.0'
   gem 'capistrano-bundler', '~> 1.1.2'
@@ -54,6 +56,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
+  gem 'selenium-webdriver'
 end
 
 group :production do

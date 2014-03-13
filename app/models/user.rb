@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true
   validates :password, length: { in: 4..8 }
 
+  attr_accessible :email, :firstname, :lastname, :password, :password_confirmation
   def has_notifications?
     false
   end

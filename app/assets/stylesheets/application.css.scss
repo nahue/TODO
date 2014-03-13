@@ -9,10 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require bootstrap
- *= require template
+ *= require framework_and_overrides
+ *= require kendo/kendo.common.min
+ *= require kendo/kendo.flat.min
  *= require font-awesome
  *= require pace/pace-theme-flash
- *= require jquery.sidr.light
  *= require_tree .
  */

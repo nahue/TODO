@@ -20,10 +20,14 @@ class TasksController < ApplicationController
     end
   end
 
+  def show
+    @task = Task.find(params[:id])
+  end
+
 private
 
   def task_params
-    params.require(:task).permit(:text)
+    params.require(:task).permit(:text, :completed, :user_id)
   end
 
 end
